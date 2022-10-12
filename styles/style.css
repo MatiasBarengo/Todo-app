@@ -1,0 +1,120 @@
+:root {
+    --bg: #333334;
+    --bg-secondary: #444444;
+    --primary: #f79600;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h3 {
+    color: var(--primary);
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.inputs {
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.text-inputs {
+    display: flex;
+    gap: 10px
+}
+
+.input-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    border-radius: 7px;
+    outline: none;
+    /*borde azul en los botones*/
+    border: solid 1px var(--primary);
+    padding: 5px 5px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.btn-c {
+    height: 20%
+}
+
+.btn {
+    border-radius: 30px;
+    outline: none;
+    padding: 5px 15px;
+    background-color: white;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary);
+    border: solid 1px var(--primary);
+}
+
+.btn-complete {
+    color: green;
+    border: 1px solid green;
+}
+
+.btn-delete {
+    color: red;
+    border: 1px solid red;
+}
+
+
+/*tasks*/
+
+.tasks-container {
+    background-color: var(--bg-secondary);
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--bg);
+}
+
+.complete {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.hide {
+    display: none;
+}
